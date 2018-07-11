@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kamil Korzekwa - Research</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 600px) {#main {margin-top: 40px}}
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="pictures/about.jpg" style="width:100%;padding:2px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-graduation-cap w3-xxlarge"></i>
+            <p>MY RESEARCH</p>
+        </a>
+        <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-address-card w3-xxlarge"></i>
+            <p>SCIENTIFIC CV</p>
+        </a>
+        <a href="personal.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>PERSONAL</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="research.html" class="w3-bar-item w3-button" style="width:25% !important">MY RESEARCH</a>
+            <a href="cv.html" class="w3-bar-item w3-button" style="width:25% !important">SCIENTIFIC CV</a>
+            <a href="personal.html" class="w3-bar-item w3-button" style="width:25% !important">PERSONAL</a>
+        </div>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-padding-large w3-container" id="main">     
+          
+        <h1>My research</h1>
+		<hr>
+		<h4>Broad scientific interests</h4>
+        <div class="w3-container">
+            <p class="mathjax">I am interested in all areas of quantum information theory, with a particular emphasis on resource theories and open dynamics.</p>
+        </div>
+		<hr>
+        <h4>Current focus</h4>
+        <div class="w3-container">
+            <p class="mathjax">At the moment I am mostly focusing on various approaches to capture the notions of reversibility and irreversibility in the quantum regime, and thus my work revolves around information-theoretic ways to describe the second law of thermodynamics. This includes investigating the problem of state interconversion under constrained dynamics (especially in the non-asymptotic regime), studying structural differences between classical stochastic dynamics and open quantum dynamics, and understanding the role of memory in dissipation processes. Besides these topics, I am also working on designing optimal classical algorithms for the simulation of quantum circuits.</p>
+        </div>
+		<hr>
+		<h4>Areas of research</h4>
+			<p>
+                (To see a full list of publications and presentations in a chronological order check my <a href="cv.html">Scientific CV</a>)
+			</p>
+        <div class="w3-row-padding w3-center">
+            <a href="javascript:void(0)" onclick="openField(event, 'Thermodynamics',' w3-border-red');">
+                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-red"><h5>Quantum Thermodynamics</h5></div>
+            </a>
+            <a href="javascript:void(0)" onclick="openField(event, 'Coherence',' w3-border-blue');">
+                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding"><h5>Quantum Coherence</h5></div>
+            </a>
+            <a href="javascript:void(0)" onclick="openField(event, 'Uncertainty',' w3-border-green');">
+                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding"><h5>Uncertainty Relations</h5></div>
+            </a>
+            <a href="javascript:void(0)" onclick="openField(event, 'Other',' w3-border-black');">
+                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding"><h5>Other Quantum</h5></div>
+            </a>
+        </div>
+
+        <div id="Thermodynamics" class="w3-container field">     
+            <br/>
+            <div id="thermo_background" class="w3-container">
+                <p>When speaking of thermodynamics one inevitably thinks of concepts such as heat flows, thermal machines and pressure, which seem to be far removed from the ideas of quantum information theory. However, on a more abstract level, thermodynamics can be seen as a field studying the accessibility/inaccessibility of one physical state from another. The first and second laws of thermodynamics are fundamental constraints on state transformations, forcing thermodynamic processes to conserve the overall energy and forbidding free conversion of heat into work. Hence, the resource-theoretic machinery originally developed to study entanglement is also perfectly suited to shed light on thermodynamics. </p> 
+                <p>In my research I mostly focus on the role that superposition principle plays in thermodynamic considerations. More precisely, I am interested in thermodynamic limitations on processing quantum coherence, the way it affects the thermodynamic arrow of time and the possibility of exploiting coherence to enhance the performance of heat engines. These foundational questions may be of interest for future advancements in nanotechnology, as interference effects are particularly relevant at scales we are increasingly able to control. Recently I am also interested in the problem of thermodynamic (and general resource-theoretic) transformations of finite-size systems, and in particular the effect this non-asymptotic regime has on reversible transformations.</p>
+            </div>
+            
+            <h6 class="w3-button" onclick="expandCollapse(event,'thermo_papers')">+ Publications</h6><br/>
+            <div id="thermo_papers" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Beyond the thermodynamic limit: finite-size corrections to state interconversion rates</i>
+                                <br>
+                            </span>
+                            <span>
+                                Christopher T. Chubb, Marco Tomamichel, Kamil Korzekwa
+                                <br>
+                            </span>
+                            <a href='https://arxiv.org/abs/1711.01193' target="_blank" class="journal_link">
+                                arXiv:1711.01193<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1711.01193')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_abstract_4')">+ Abstract</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_popsum_4')">+ Popular Summary</p>
+                            </div>
+                            <div id="thermo_abstract_4" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>Thermodynamics is traditionally constrained to the study of macroscopic systems whose energy fluctuations are negligible compared to their average energy. Here, we push beyond this thermodynamic limit by developing a mathematical framework to rigorously address the problem of thermodynamic transformations of finite-size systems. More formally, we analyse state interconversion under thermal operations and between arbitrary energy-incoherent states. We find precise relations between the optimal rate at which interconversion can take place and the desired infidelity of the final state when the system size is sufficiently large. These so-called second-order asymptotics provide a bridge between the extreme cases of single-shot thermodynamics and the asymptotic limit of infinitely large systems. We illustrate the utility of our results with several examples. We first show how thermodynamic cycles are affected by irreversibility due to finite-size effects. We then provide a precise expression for the gap between the distillable work and work of formation that opens away from the thermodynamic limit. Finally, we explain how the performance of a heat engine gets affected when one of the heat baths it operates between is finite. We find that while perfect work cannot generally be extracted at Carnot efficiency, there are conditions under which these finite-size effects vanish. In deriving our results we also clarify relations between different notions of approximate majorisation.
+                                </p>
+                            </div>
+                            <div id="thermo_popsum_4" class="w3-container w3-hide popsum mathjax">
+                                <p><i>Popular summary:</i> Thermodynamics is one of the most versatile physical theories, finding applications in almost all fields of science, from cosmology and astrophysics to chemistry and the theory of computation. Its strength comes from the fact that it provides a universal framework that uses statistical tools to study physical phenomena in the so-called thermodynamic limit, i.e., when the number of involved systems is very large. However, our increasing ability to manipulate and control systems at smaller and smaller scales allows us to build novel nanodevices operating well beyond the thermodynamic limit. Therefore, in order to understand the thermodynamic properties of such devices, we need to formulate a theory that is not constrained to the study of macroscopic systems. In this paper we achieve this by developing an information-theoretic framework describing thermodynamic transformations of finite-size systems. One immediate application of our theoretical results is to the study of irreversible processes in the nanoscale regime. In particular, we show how the amount of ordered energy needed to drive a small system out of equilibrium is larger than the amount one could obtain in a reverse process. This affects reversibility of thermodynamic cycles and, in turn, deteriorates performance of nanoengines. Despite these negative finite-size effects, we find that in specially engineered conditions nanoscale engines can still achieve the ultimate limit of efficiency. Our results expand the realm of applicability of thermodynamics beyond the constraint of macroscopic systems, and thus provide new tools to study the universe at the smallest scale.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Structure of the thermodynamic arrow of time in classical and quantum theories</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.052318' target="_blank" class="journal_link">
+                                Phys. Rev. A <b>95</b>, 052318 (2017)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1609.05910')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_abstract_3')">+ Abstract</p>
+                            </div>
+                            <div id="thermo_abstract_3" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>In this work we analyse the structure of the thermodynamic arrow of time, defined by transformations that leave the thermal equilibrium state unchanged, in classical (incoherent) and quantum (coherent) regimes. We note that in the infinite-temperature limit the thermodynamic ordering of states in both regimes exhibits a lattice structure. This means that when energy does not matter and the only thermodynamic resource is given by information, the thermodynamic arrow of time has a very specific structure. Namely, for any two states at present there exists a unique state in the past consistent with them and with all possible joint pasts. Similarly, there also exists a unique state in the future consistent with those states and with all possible joint futures. We also show that the lattice structure in the classical regime is broken at finite temperatures, i.e., when energy is a relevant thermodynamic resource. Surprisingly, however, we prove that in the simplest quantum scenario of a two-dimensional system, this structure is preserved at finite temperatures. We provide the physical interpretation of these results by introducing and analysing the history erasure process, and point out that quantum coherence may be a necessary resource for the existence of an optimal erasure process.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>The extraction of work from quantum coherence</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Matteo Lostaglio, Jonathan Oppenheim, David Jennings
+                                <br>
+                            </span>
+                            <a href='http://iopscience.iop.org/article/10.1088/1367-2630/18/2/023045/meta' target="_blank" class="journal_link">
+                                New J. Phys. <b>18</b>, 023045 (2016)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1506.07875')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_abstract_2')">+ Abstract</p>
+                                <p class="w3-button w3-red w3-hover-red" onclick="window.open('http://iopscience.iop.org/journal/1367-2630/page/highlights-of-2016')">Highlights of 2016</p>
+                            </div>
+                            <div id="thermo_abstract_2" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>The interplay between quantum-mechanical properties, such as coherence, and classical notions, such as energy, is a subtle topic at the forefront of quantum thermodynamics. The traditional Carnot argument limits the conversion of heat to work; here we critically assess the problem of converting coherence to work. Through a careful account of all resources involved in the thermodynamic transformations within a fully quantum-mechanical treatment, we show that there exist thermal machines extracting work from coherence arbitrarily well. Such machines only need to act on individual copies of a state and can be reused. On the other hand, we show that for any thermal machine with finite resources not all the coherence of a state can be extracted as work. However, even bounded thermal machines can be reused infinitely many times in the process of work extraction from coherence.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Quantum Coherence, Time-Translation Symmetry, and Thermodynamics</i>
+                                <br>
+                            </span>
+                            <span>
+                                Matteo Lostaglio, Kamil Korzekwa, David Jennings, Terry Rudolph
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/prx/abstract/10.1103/PhysRevX.5.021001' target="_blank" class="journal_link">
+                                Phys. Rev. X <b>5</b>, 021001 (2015)<br>
+                            </a>
+
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1410.4572')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_abstract_1')">+ Abstract</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_popsum_1')">+ Popular Summary</p>
+                                <p class="w3-button w3-red w3-hover-red" onclick="window.open('https://physics.aps.org/articles/v8/112')">Featured in Physics</p>
+                            </div>
+                            <div id="thermo_abstract_1" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>The first law of thermodynamics imposes not just a constraint on the energy-content of systems in extreme quantum regimes, but also symmetry-constraints related to the thermodynamic processing of quantum coherence. We show that this thermodynamic symmetry decomposes any quantum state into mode operators that quantify the coherence present in the state. We then establish general upper and lower bounds for the evolution of quantum coherence under arbitrary thermal operations, valid for any temperature. We identify primitive coherence manipulations and show that the transfer of coherence between energy levels manifests irreversibility not captured by free energy. Moreover, the recently developed thermo-majorization relations on block-diagonal quantum states are observed to be special cases of this symmetry analysis.
+                                </p>
+                            </div>
+                            <div id="thermo_popsum_1" class="w3-container w3-hide popsum mathjax">
+                                <p><i>Popular summary:</i> The remarkable discovery that energy at microscopic scales often comes in discrete chunks originated in Planck's attempt to understand the way that hot bodies glow. Thus began the long and intimate relationship between the field of thermodynamics, which explores our ability to manipulate heat and other energy transfers between macroscopic systems, and quantum mechanics, which explains the dynamics of individual microscopic systems. Even as both our technology and our theoretical investigations have extended to ever-smaller devices, our understanding of quantum effects on thermodynamics has remained almost exclusively limited to the quantized nature of energy. There is much more, however, to quantum theory than energy quantization; here our focus has been the property of quantum coherence  the ability of quantum systems to emulate Schroedinger's cat and somehow be neither "dead and alive" nor "dead or alive" but something completely different altogether. We have discovered how to simplify our understanding of the thermal processing of coherence by using the fact that thermodynamical processes obey time-translation symmetry. This enables quantification of the way coherence can play an active role, facilitating the otherwise-impossible unlocking of energy from certain systems. We have conversely found fundamental limitations on how coherence can be irreversibly manipulated, limitations related to those on energy transfer as dictated by the Second Law of thermodynamics. It has long been appreciated that understanding of thermodynamics must be accompanied by an understanding of information theory. Our work provides evidence that to apply the laws of thermodynamics to the smallest systems around us necessitates an understanding of quantum information theory.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h6 class="w3-button" onclick="expandCollapse(event,'thermo_talks')">+ Oral Presentations</h6></br>
+            <div id="thermo_talks" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Beyond the thermodynamic limit</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Thermo_04.pdf')">Slides</p>
+                                <p class="w3-button" onclick="window.open('talks/Thermo_04_variant.pdf')">Slides (variant)</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_4')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_4" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+									<li>Center for Theoretical Physics seminar, Polish Academy of Sciences, Poland (2017)</li>
+                                    <li>Quantum Information & Chaos seminar, Jagiellonian University, Poland (2017)</li>
+                                    <li>Quantum Foundations and Beyond symposium, National Quantum Information Centre, Sopot, Poland (2017)</li>      
+                                    <li>Quantum Science Group seminar, University of Sydney, Australia (2017)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>The extraction of work from quantum coherence</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/thermo_03.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_3')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_3" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Scientific meeting of PhD students, Wrocław University of Technology, Poland (2016)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Quantum information and thermodynamics: a resource-theoretic approach</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Thermo_02.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_2')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Quantum Optics and Laser Science Group seminar, Imperial College London, United Kingdom (2016)</li>
+                                    <li>Takahiro Sagawa's Group seminar, University of Tokyo, Japan (2016)</li>
+                                    <li>Quantum Science Group seminar, University of Sydney, Australia (2016)</li>
+                                    <li>Coherence-Correlations-Complexity seminar, Wrocław University of Technology, Poland (2015)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Quantum Coherence, Time-Translation Symmetry, and Thermodynamics</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Thermo_01.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_1')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>APS March Meeting, Baltimore, USA (2016)</li>
+                                    <li>4th International Workshop on the Optical Properties of Nanostructures, Wrocław, Poland (2016)</li>
+                                    <li>Quantum Information Theory seminar, ICFO Barcelona, Spain (2016)</li>
+                                    <li>Symposium on Quantum Coherence, University of Ulm, Germany (2015)</li>
+                                    <li>Quantum Information Theory seminar, ETH Zurich, Switzerland (2015)</li> 
+                                    <li>7th Colleges of London Quantum Information Meeting, Imperial College London, United Kingdom (2014)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+			
+			<h6 class="w3-button" onclick="expandCollapse(event,'thermo_posters')">+ Poster Presentations</h6>
+            <div id="thermo_posters" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Work extraction from quantum coherence</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Thermo_02.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_poster_2')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_poster_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>3rd Quantum Thermodynamics Conference, Porquerolles, France (2015)</li>
+									<li>Postgraduate Research Symposium at Imperial College London, London, United Kingdom (2015)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Quantum Coherence, Time-Translation Symmetry, and Thermodynamics</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Thermo_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>18th Conference on Quantum Information Processing, Sydney, Australia (2015)</li>
+                                    <li>2nd Quantum Thermodynamics Conference, Mallorca, Spain (2015)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+
+        <div id="Coherence" class="w3-container field" style="display:none">
+            
+            <br/>
+            <div id="coherence_background" class="w3-container">
+                <p>Although quantum mechanics owes its name to the quantisation of energy, postulated at the beginning of the 20th century by the old quantum theory, its counter-intuitive “weirdness” comes from the superposition principle that was discovered a quarter of a century later. Concepts such as Schrödinger’s cat, quantum teleportation and quantum computing all stem from this fundamental rule of the quantum realm: given two valid states of a system, e.g., spin-up and spin-down, their coherent superposition is also a valid state.</p>
+                <p>Beyond the role that quantum coherence plays in thermodynamics, I am also interested in characterizing it as a resource in general quantum information scenarios. This involves studies on optimal processing of coherence (i.e., finding the ultimate limits of avoiding decoherence processes that deteriorate quantum information), understanding how it affets the nature of reversible processes and investigating the role quantum coherence plays in distinguishing physical states and processes.</p>
+            </div>
+            
+            <h6 class="w3-button" onclick="expandCollapse(event,'coherence_papers')">+ Publications</h6><br/>
+            <div id="coherence_papers" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Coherifying quantum channels</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Stanisław Czachórski, Zbigniew Puchała, Karol Życzkowski
+                                <br>
+                            </span>
+                            <a href='http://iopscience.iop.org/article/10.1088/1367-2630/aaaff3/meta' target="_blank" class="journal_link">
+                                New J. Phys. <b>20</b>, 043028 (2018)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1710.04228')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_abstract_2')">+ Abstract</p>
+                            </div>
+                            <div id="coherence_abstract_2" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>Is it always possible to explain random stochastic transitions between states of a finite-dimensional system as arising from the deterministic quantum evolution of the system? If not, then what is the minimal amount of randomness required by quantum theory to explain a given stochastic process? Here, we address this problem by studying possible coherifications of a quantum channel \(\Phi\), i.e., we look for channels \(\Phi^{\mathcal{C}}\) that induce the same classical transitions \(T\), but are "more coherent". To quantify the coherence of a channel \(\Phi\) we measure the coherence of the corresponding Jamiołkowski state \(J_{\Phi}\). We show that the classical transition matrix \(T\) can be coherified to reversible unitary dynamics if and only if \(T\) is unistochastic. Otherwise the Jamiołkowski state \(J_\Phi^{\mathcal{C}}\) of the optimally coherified channel is mixed, and the dynamics must necessarily be irreversible. To asses the extent to which an optimal process \(\Phi^{\mathcal{C}}\) is indeterministic we find explicit bounds on the entropy and purity of \(J_\Phi^{\mathcal{C}}\), and relate the latter to the unitarity of \(\Phi^{\mathcal{C}}\). We also find optimal coherifications for several classes of channels, including all one-qubit channels. Finally, we provide a non-optimal coherification procedure that works for an arbitrary channel \(\Phi\) and reduces its rank (the minimal number of required Kraus operators) from \(d^2\) to \(d\).
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Markovian evolution of quantum coherence under symmetric dynamics</i>
+                                <br>
+                            </span>
+                            <span>
+                                Matteo Lostaglio, Kamil Korzekwa, Antony Milne
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.96.032109' target="_blank" class="journal_link">
+                                Phys. Rev. A <b>96</b>, 032109 (2017)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1703.01826')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_abstract_1')">+ Abstract</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_popsum_1')">+ Popular Summary</p>
+                            </div>
+                            <div id="coherence_abstract_1" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>Both conservation laws and practical restrictions impose symmetry constraints on the dynamics of open quantum systems. In the case of time-translation symmetry, which arises naturally in many physically relevant scenarios, the quantum coherence between energy eigenstates becomes a valuable resource for quantum information processing. In this work we identify the minimum amount of decoherence compatible with this symmetry for a given population dynamics. This yields a generalisation to higher-dimensional systems of the relation \(T_2\leq 2T_1\) for qubit decoherence and relaxation times. It also enables us to witness and assess the role of non-Markovianity as a resource for coherence preservation and transfer. Moreover, we discuss the relationship between ergodicity and the ability of Markovian dynamics to indefinitely sustain a superposition of different energy states. Finally, we establish a formal connection between the resource-theoretic and the master equation approaches to thermodynamics, with the former being a non-Markovian generalisation of the latter. Our work thus brings the abstract study of quantum coherence as a resource towards the realm of actual physical applications.
+                                </p>
+                            </div>
+                            <div id="coherence_popsum_1" class="w3-container w3-hide popsum mathjax">
+                                <p><i>Popular summary:</i> Quantum bits differ substantially from classical ones since, like Schrödinger’s cat, they can exist in a superposition of two different states. This wave-like nature is a key ingredient of quantum computing, but it is very fragile and can easily be destroyed. Whereas one could keep track of the intermediate steps of computation performed on a classical computer without interfering with the calculation itself, in a quantum computer superpositions must be hidden until the final result is obtained. A major goal is then to prevent the leakage of quantum information from the computer, a process known as "decoherence". Here we provide a general framework to quantify the minimal decoherence experienced by a quantum mechanical system. Our main result is a minimal decoherence theorem that gives a fundamental upper bound on the amount of superposition that can be preserved when energy leaks from a system into the surrounding environment. The theorem has a range of consequences, since it generalises the notion of relaxation and decoherence times used in NMR spectroscopy, allows us to understand the role of memory effects in decoherence processes, and identifies what kind of energy flows are compatible with the preservation of superpositions. In this work we show how novel quantum information tools characterising superposition as a resource can be employed to study decoherence processes, thus bridging the gap between abstract theory and the realm of physical applications.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+                
+            <h6 class="w3-button" onclick="expandCollapse(event,'coherence_talks')">+ Oral Presentations</h6></br>
+            <div id="coherence_talks" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Coherifying quantum states and channels</i>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Coherence_02.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_2')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Centre for Quantum Software and Information seminar, University of Technology Sydney, Sydney, Australia (2018)</li>
+									<li>Monash Quantum Information Science seminar, Monash University, Melbourne Australia (2018)</li>
+									<li>QSciTech Research Group seminar, Macquarie University, Sydney, Australia (2018)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>On time evolution of coherences and populations</i>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Coherence_01.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_1')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Quantum Information & Chaos seminar, Jagiellonian University, Kraków, Poland (2016)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                </ul> 
+            </div>
+			
+		    <h6 class="w3-button" onclick="expandCollapse(event,'coherence_posters')">+ Poster Presentations</h6>
+            <div id="coherence_posters" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Coherifying quantum channels</i>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Coherence_02.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_poster_2')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_poster_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>13th Conference on the Theory of Quantum Computation, Communication and Cryptography​, Sydney, Australia (2018)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Markovian evolution of quantum coherence under symmetric dynamics</i>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Coherence_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>21st Conference on Quantum Information Processing, Delft, Netherlands (2018)</li>
+									<li>EQuS Annual Workshop, Hunter Valley, Australia (2017)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                </ul> 
+            </div>
+        </div>
+
+        <div id="Uncertainty" class="w3-container field" style="display:none">
+            
+			<br/>
+            <div id="uncertainty_background" class="w3-container">	
+				<p>Until the early 1900s uncertainty was not considered to be a fundamental concept – rather it was a statement about the imperfection of our tools and observation methods. The advent of quantum mechanics, however, changed this perspective completely. We now know that while classical uncertainty arises from ignorance, quantum phenomena are irreducibly unpredictable: even for a single fixed measurement and a pure quantum state of maximal knowledge, we can typically only make probabilistic predictions. The situation worsens when we consider measurements of observables that do not commute – there exist fundamental constraints on our ability to make predictions about either possible set of outcomes. The most celebrated such constraint is the Heisenberg-Robertson uncertainty relation; however, over time, the study of uncertainty relations has itself become a major topic and has played an important role in uncovering the mysteries of the quantum realm. In particular, a variety of quantum information problems can be phrased in the language of uncertainty relations, including quantum cryptographic security proofs, quantitative wave-particle duality relations and witnessing entanglement.</p>
+                <p>
+                In my research I focus on the interplay between quantum and classical uncertainty. The motivation comes from the fact the original uncertainty relations, developed when physicists were mostly interested in extreme scenarios and ultimate bounds, were restricted to quantum systems prepared in pure states of maximal knowledge. However, as soon as uncertainty relations are used to study quantum information problems, the investigated systems are not necessarily prepared in pure states. In fact, most quantum states arising in theoretical considerations (e.g., in entanglement theory) and the ones used to describe quantum systems prepared in laboratories are mixed. Therefore, a proper understanding of the interplay between classical lack of knowledge and purely quantum uncertainty coming from coherence is crucial for quantum information based technologies.</p>
+            </div>
+            
+            <h6 class="w3-button" onclick="expandCollapse(event,'uncertainty_papers')">+ Publications</h6></br>
+            <div id="uncertainty_papers" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Classical noise and the structure of minimal uncertainty states</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Matteo Lostaglio
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.062347' target="_blank" class="journal_link">
+                                Phys. Rev. A <b>93</b>, 062347 (2016)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1602.01850')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'uncertainty_abstract_3')">+ Abstract</p>
+                            </div>
+                            <div id="uncertainty_abstract_3" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>Which quantum states minimise the unavoidable uncertainty arising from the non-commutativity of two observables? The immediate answer to such a question is: it depends. Due to the plethora of uncertainty measures there are many answers. Here, instead of restricting our study to a particular measure, we present plausible axioms for the set \(\mathcal{F}\) of bona-fide information-theoretic uncertainty functions. Then, we discuss the existence of states minimising uncertainty with respect to all members of \(\mathcal{F}\), i.e., universal minimum uncertainty states (MUS). We prove that such states do not exist within the full state space and study the effect of classical noise on the structure of minimum uncertainty states. We present an explicit example of a qubit universal MUS that arises when purity is constrained by introducing a threshold amount of noise. For higher dimensional systems we derive several no-go results limiting the existence of noisy universal MUS. However, we conjecture that universality may emerge in an approximate sense. We conclude by discussing connections with thermodynamics, and highlight the privileged role that non-equilibrium free energy \(F_2\) plays close to equilibrium.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Quantum and classical entropic uncertainty relations</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Matteo Lostaglio, David Jennings, Terry Rudolph
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.042122' target="_blank" class="journal_link">
+                                Phys. Rev. A <b>89</b>, 042122 (2014)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1402.1143')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'uncertainty_abstract_2')">+ Abstract</p>
+                            </div>
+                            <div id="uncertainty_abstract_2" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>How much of the uncertainty in predicting measurement outcomes for non-commuting quantum observables is genuinely quantum mechanical? We provide a natural decomposition of the total entropic uncertainty of two non-commuting observables into a classical component, and an intrinsically quantum mechanical component. We show that the total quantum component in a state is never lower or upper bounded by any state-independent quantities, but instead admits "purity-based" lower bounds that generalize entropic formulations such as the Maassen-Uffink relation. These relations reveal a non-trivial interplay between quantum and classical randomness in any finite-dimensional state.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Operational constraints on state-dependent formulations of quantum error-disturbance trade-off relations</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, David Jennings, Terry Rudolph
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.052108' target="_blank" class="journal_link">
+                                Phys. Rev. A <b>89</b>, 052108 (2014)<br>
+                            </a>
+
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1311.5506')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'uncertainty_abstract_1')">+ Abstract</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'uncertainty_popsum_1')">+ Popular Summary</p>
+                            </div>
+                            <div id="uncertainty_abstract_1" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>We argue for an operational requirement that all state-dependent measures of disturbance should satisfy. Motivated by this natural criterion, we prove that in any \(d\)-dimensional Hilbert space and for any pair of non-commuting operators, \(A\) and \(B\), there exists a set of at least \(2^{d−1}\) zero-noise, zero-disturbance (ZNZD) states, for which the first observable can be measured without noise and the second will not be disturbed. Moreover, we show that it is possible to construct such ZNZD states for which the expectation value of the commutator \([A,B]\) does not vanish. Therefore any state-dependent error-disturbance relation, based on the expectation value of the commutator as a lower bound, must violate the operational requirement. We also discuss Ozawa's state-dependent error-disturbance relation in light of our results and show that the disturbance measure used in this relation exhibits unphysical properties. We conclude that the trade-off is inevitable only between state-independent measures of error and disturbance.
+                                </p>
+                            </div>
+                            <div id="uncertainty_popsum_1" class="w3-container w3-hide popsum mathjax">
+                                <p><i>Popular summary:</i> The uncertainty principle lies at the very heart of quantum physics. Its best known formulation, the Heisenberg-Robertson inequality, states that two physical properties of any quantum system that are represented by non-commuting observables, cannot simultaneously have well defined values. It has been speculated for a number of years that the so-called error-disturbance relation is a direct consequence of this well-established inequality. In its state-dependent form it states that given a physical system in a known quantum state, one cannot sequentially perform measurements of two non-commuting observables perfectly. In other words: either the first measurement has to be imperfect (noisy) or the second one has to be disturbed. In this paper, assuming only that a noisy or disturbed measurement should be experimentally distinguishable from a perfect one, we prove that this is actually not the case. We show that for every quantum system there exist quantum states for which it is possible to perform perfect, i.e., noiseless and undisturbed, measurements of two non-commuting observables. This demonstrates that it is not only the measurement process that is responsible for the disturbance to subsequent measurements, but also the lack of knowledge about the initial quantum state. We conclude that in order to properly understand error-disturbance relation, one should seek for a state-independent formulation that takes into account this lack of knowledge.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+			<h6 class="w3-button" onclick="expandCollapse(event,'uncertainty_posters')">+ Poster Presentations</h6>
+            <div id="uncertainty_posters" class="w3-container w3-hide">
+                <ul class="w3-ul">
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Noise and disturbance of quantum measurement: measures and uncertainty relations</i>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Uncertainty_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'uncertainty_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="uncertainty_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Summer School on Quantum Information, Computing and Control, London, United Kingdom (2013)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                </ul> 
+            </div>
+        </div>
+          
+        <div id="Other" class="w3-container field" style="display:none">
+            <br/>
+            <div id="other_background" class="w3-container">	
+				At the earliest stage of my carrier I was working in <a href="http://nanotheory.pwr.edu.pl/" target="_blank">"Theory of excitation dynamics in semiconductors"</a> research group, where I was developing models for spin dynamics in p-doped semiconductor nanostructures subject to a magnetic field. Apart from the general interest in understanding the often non-trivial kinetics of spin precession and decoherence, the optical studies of such structures are motivated by possible applications in spintronics and spin-based quantum information processing. At some point I also got interested in the problem of quantum state transfer in spin chains, which were proposed as potential candidates for short-range communication channels providing inter-qubit communication during more complex quantum computation processes.
+            </div>
+            <h6 class="w3-button" onclick="expandCollapse(event,'other_papers')">+ Publications</h6></br>
+            <div id="other_papers" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Quantum-state transfer in spin chains via isolated resonance of terminal spins</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Paweł Machnikowski, Paweł Horodecki
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.062301' target="_blank" class="journal_link">
+                                Phys. Rev. A <b>89</b>, 062301 (2014)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1403.7359')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_5')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_5" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>We propose a quantum-state transfer protocol in a spin chain that requires only the control of the spins at the ends of the quantum wire. The protocol is to a large extent insensitive to inhomogeneity caused by local magnetic fields and perturbation of exchange couplings. Moreover, apart from the free evolution regime, it allows one to induce an adiabatic spin transfer, which provides the possibility of performing the transfer on demand. We also show that the amount of information leaking into the central part of the chain is small throughout the whole transfer process (which protects the information sent from being eavesdropped) and can be controlled by the magnitude of the external magnetic field.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span class="mathjax">
+                                <i>Spin dynamics in \(p\)-doped semiconductor nanostructures subject to a magnetic field tilted from the Voigt geometry</i>
+                                <br>
+                            </span>
+                            <span>
+                                K. Korzekwa, C. Gradl, M. Kugler, S. Furthmeier, M. Griesbeck, M. Hirmer, D. Schuh, W. Wegscheider, T. Kuhn, C. Schüller, T. Korn, P. Machnikowski
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.155303' target="_blank" class="journal_link">
+                                Phys. Rev. B <b>88</b>, 155303 (2013)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1306.6363')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_4')">+ Abstract</p>
+                                <p class="w3-button w3-red w3-hover-red" style="cursor:auto">Editors' Suggestion</p>
+                            </div>
+                            <div id="other_abstract_4" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>We develop a theoretical description of the spin dynamics of resident holes in a p-doped semiconductor quantum well (QW) subject to a magnetic field tilted from the Voigt geometry. We find the expressions for the signals measured in time-resolved Faraday rotation (TRFR) and resonant spin amplification (RSA) experiments and study their behavior for a range of system parameters. We find that an inversion of the RSA peaks can occur for long hole spin dephasing times and tilted magnetic fields. We verify the validity of our theoretical findings by performing a series of TRFR and RSA experiments on a \(p\)-modulation doped GaAs/Al\(_{0.3}\)Ga\(_{0.7}\)As single QW and showing that our model can reproduce experimentally observed signals.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Spin dynamics in two-dimensional electron and hole systems revealed by resonant spin amplification</i>
+                                <br>
+                            </span>
+                            <span>
+                                T. Korn, M. Griesbeck, M. Kugler, S. Furthmeier, C. Gradl, M. Hirmer, D. Schuh, W. Wegscheider, K. Korzekwa, P. Machnikowski, T. Kuhn, M.M. Glazov, E.Ya. Sherman,C. Schüller
+                                <br>
+                            </span>
+                            <a href='http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1367496' target="_blank" class="journal_link">
+                                Proc. SPIE <b>8461</b>, Spintronics V, 84610O (2012)<br>
+                            </a>
+
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('papers/spie12_rsa.pdf')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_3')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_3" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>Understanding and controlling the spin dynamics in semiconductor heterostructures is a key requirement for the design of future spintronics devices. In GaAs-based heterostructures, electrons and holes have very different spin dynamics. Some control over the spin-orbit fields, which drive the electron spin dynamics, is possible by choosing the crystallographic growth axis. Here, (110)-grown structures are interesting, as the Dresselhaus spinorbit fields are oriented along the growth axis and therefore, the typically dominant Dyakonov-Perel mechanism is suppressed for spins oriented along this axis, leading to long spin depasing times. By contrast, hole spin dephasing is typically very rapid due to the strong spin-orbit interaction of the p-like valence band states. For localized holes, however, most spin dephasing mechanisms are suppressed, and long spin dephasing times may be observed. Here, we present a study of electron and hole spin dynamics in GaAs-AlGaAs-based quantum wells. We apply the resonant spin amplification (RSA) technique, which allows us to extract all relevant spin dynamics parameters, such as \(g\) factors and dephasing times with high accuracy. A comparison of the measured RSA traces with the developed theory reveals the anisotropy of the spin dephasing in the (110)-grown two-dimensional electron systems, as well as the complex interplay between electron and hole spin and carrier dynamics in the two-dimensional hole systems.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Tunneling transfer protocol in a quantum dot chain immune to inhomogeneity</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Paweł Machnikowski
+                                <br>
+                            </span>
+                            <a href='http://przyrbwn.icm.edu.pl/APP/ABSTR/120/a120-5-9.html' target="_blank" class="journal_link">
+                                Acta Phys. Pol. A, <b>120</b>, 859-861 (2011)<br>
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/1108.5749')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_2')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_2" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>We propose a quantum dot (QD) implementation of a quantum state transfer channel. The proposed channel consists of \(N\) vertically stacked QDs with the nearest neighbor tunnel coupling, placed in an axial electric field. We show that the system supports high-fidelity transfer of the state of a terminal dot both by free evolution and by adiabatic transfer. The protocol is to a large extent insensitive to inhomogeneity of the energy parameters of the dots and requires only a global electric field.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span class="mathjax">
+                                <i>Decoherence-assisted initialization of a resident hole spin polarization in a \(p\)-doped semiconductor quantum well</i>
+                                <br>
+                            </span>
+                            <span>
+                                M. Kugler, K. Korzekwa, P. Machnikowski, C. Gradl, S. Furthmeier, M. Griesbeck, M. Hirmer, D. Schuh, W. Wegscheider, T. Kuhn, C. Schüller, T. Korn
+                                <br>
+                            </span>
+                            <a href='https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.085327' target="_blank" class="journal_link">
+                                Phys. Rev. B <b>84</b>, 085327 (2011)<br>
+                            </a>
+
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('papers/Korn_RSA_SPIE12.pdf')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_1')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_1" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i>We investigate spin dynamics of resident holes in a \(p\)-modulation-doped GaAs/Al\(_{0.3}\)Ga\(_{0.7}\)As single quantum well. Time-resolved Faraday and Kerr rotation, as well as resonant spin amplification, are utilized in our study. We observe that nonresonant or high-power optical pumping leads to a resident hole spin polarization with opposite sign with respect to the optically oriented carriers, while low-power resonant optical pumping only leads to a resident hole spin polarization if a sufficient in-plane magnetic field is applied. The competition between two different processes of spin orientation strongly modifies the shape of resonant spin amplification traces. Calculations of the spin dynamics in the electron-hole system are in good agreement with the experimental Kerr rotation and resonant spin amplification traces and allow us to determine the hole spin polarization within the sample after optical orientation, as well as to extract quantitative information about spin dephasing processes at various stages of the evolution.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+            <h6 class="w3-button" onclick="expandCollapse(event,'other_talks')">+ Oral Presentations</h6></br>
+            <div id="other_talks" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Quantum state transfer via spin chains</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Other_02.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_2')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Coherence-Correlations-Complexity seminar, Wrocław University of Technology, Poland (2013)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Decoherence-driven mechanism for initialization of hole spins in a p-doped semiconductor quantum well</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Other_01.pdf')">Slides</p>
+                                <p class="w3-button" onclick="window.open('talks/Other_01_short.pdf')">Slides (shortened)</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_1')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>41st “Jaszowiec” International School & Conference on the Physics of Semiconductors, Krynica-Zdrój, Poland (2012)</li>
+                                    <li>Optical Spectroscopy of Semiconductor Quantum Structures seminar, Universität Regensburg, Germany (2011)</li>
+                                    <li>Coherence-Correlations-Complexity seminar, Wrocław University of Technology, Poland (2011)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+			
+			<h6 class="w3-button" onclick="expandCollapse(event,'other_posters')">+ Poster Presentations</h6>
+            <div id="other_posters" class="w3-container w3-hide">
+                <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Spin dynamics in p-doped semiconductor nanostructures subject to magnetic fields tilted from the Voigt geometry</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_05.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_5')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_5" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>16th International Conference on Modulated Semiconductor Structures, Wrocław, Poland (2013)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>On-demand quantum state transfer in spin chains with limited control and high resilience against imperfections</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_04.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_4')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_4" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Summer School on Quantum Information, Computing and Control, Aberystwyth, United Kingdom (2012)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 					
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Theoretical modelling of magnetooptical experiments in p-doped nanostructures</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_03.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_3')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_3" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Polish-German Workshop on the Optical Properties of Nanostructures, Münster (2012)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Theory of Kerr rotation and resonant spin amplification in p-doped nanostructures</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_02.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_2')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>The international conference on Optics of Excitons in Confined Systems, Paris (2011)</li>
+									<li>Polish-German Workshop on the Optical Properties of Nanostructures, Wrocław (2011)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span>
+                                <i>Tunneling Transfer Protocol in a Quantum Dots Chain Immune to Inhomogeneity</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>40th “Jaszowiec” Conference on the Physics of Semiconductors, Krynica Zdrój (2011)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 					
+				</ul>
+            </div>            
+        </div>
+    
+    </div>
+    
+    <script src="scripts/open_field.js"></script>
+    <script src="scripts/expand_collapse.js"></script>
+    
+ </body>
+</html>

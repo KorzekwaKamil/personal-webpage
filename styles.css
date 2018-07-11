@@ -1,0 +1,36 @@
+#main {
+    margin-left: 140px
+}
+
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+}
+
+@media only screen and (max-width: 600px) {
+    #main {margin-top: 40px}
+}
+
+.w3-sidebar {
+    width: 140px;
+    background: #000;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    background-color:lightgray;
+}
+
+.journal_link {
+    text-decoration:none;
+}
+
+.journal_link:hover {
+    background-color:lightgray;
+}
+
+.indented {
+	text-indent: 25px;
+}

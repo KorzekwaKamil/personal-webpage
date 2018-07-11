@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kamil Korzekwa - Personal</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 600px) {#main {margin-top: 40px}}
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body onload="fix_size()" onresize="fix_size()">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="pictures/about.jpg" style="width:100%;padding:2px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-graduation-cap w3-xxlarge"></i>
+            <p>MY RESEARCH</p>
+        </a>
+        <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-address-card w3-xxlarge"></i>
+            <p>SCIENTIFIC CV</p>
+        </a>
+        <a href="personal.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>PERSONAL</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="research.html" class="w3-bar-item w3-button" style="width:25% !important">MY RESEARCH</a>
+            <a href="cv.html" class="w3-bar-item w3-button" style="width:25% !important">SCIENTIFIC CV</a>
+            <a href="personal.html" class="w3-bar-item w3-button" style="width:25% !important">PERSONAL</a>
+        </div>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main" style="height:100%">
+        
+        <h1>Personal</h1>
+        <hr>
+        
+        <h4>Things I Like</h4>
+        <div class="w3-container">
+            <table>
+                <tr>
+                    <td>Books:</td>
+                    <td><a href="https://www.goodreads.com/user/show/23363328-kamil-korzekwa" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="pictures/goodreads_favicon.png" style="width:1em;margin-right:.5em;" alt="Goodreads icon">Goodreads</a> </td>
+                </tr>
+                <tr>
+                    <td>Films:</td>
+                    <td><a href="http://www.imdb.com/user/ur35648355/?ref_=nb_usr_prof_0" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/favicon-2165806970._CB499613556_.ico" style="width:1em;margin-right:.5em;" alt="IMDb icon">IMDb</a></td>
+                </tr>
+                <tr>
+                    <td>Music:</td>
+                    <td><a href="https://www.last.fm/user/kozon" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://www.last.fm/static/images/favicon.702b239b6194.ico" style="width:1em;margin-right:.5em;" alt="Last.fm icon">Last.fm</a></td>
+                </tr>
+                <tr>
+                    <td>Running: &nbsp &nbsp &nbsp</td>
+                    <td><a href="https://www.endomondo.com/profile/4632109" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://www.endomondo.com/favicon.ico" style="width:1em;margin-right:.5em;" alt="Endomondo icon">Endomondo</a></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+		<h4>Sydney Street Art</h4>
+        <div class="w3-row-padding">
+            <div id="streetart_desc" class="w3-half">
+                <p><b>Description:</b> When I arrived to Sydney in January 2017 to start my postdoc, I was immediately exposed to the incredible richness of this city's street art scene. Encountering more and more amazing works around every corner, I felt that these fragile and temporary artworks should somehow be preserved and catalogued, so I decided to start "Sydney Street Art" project. Its aim is to photograph and geotag Sydney's graffiti, collect information about the artists responsible for the works, and present all the data on the website.</p>
+                <p><b>Current status:</b> The database consists of 582 artworks, created by 44 identified artists, in 238 distinct location within 25 suburbs of Sydney. </p>
+                                
+                <p><b>More:</b></p>
+                <a href="http://www.sydneystreetart.com" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="pictures/sydneystreetart_favicon.png" style="width:1em;margin-right:.5em;" alt="Sydneystreetart icon">sydneystreetart.com</a></br>
+                <a href="https://www.facebook.com/SydneyGraffitis/" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="pictures/fb_favicon.png" style="width:1em;margin-right:.5em;" alt="FB icon">Project's FB page</a></br>
+                <a href="https://www.instagram.com/sydneygraffitis/" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="pictures/insta_favicon.ico" style="width:1em;margin-right:.5em;" alt="FB icon">Project's Instagram page</a></br>
+            </div>
+            <div id="streetart_photo" class="w3-half w3-display-container">
+                    <img class="w3-display-middle" style="max-width:100%;max-height:100%;width:auto;height:auto;" src="pictures/St_Peters_005.jpg">
+            </div>
+        </div>  
+		
+		<hr>
+		<h4>Math Puzzles</h4>
+		<div id="math_puzzles" class="w3-container">
+            <div id="puzzles_desc" class="w3-half">
+                <p><b>Description:</b> Over the years I have encountered many interesting mathematical puzzles, not always related to my research. For some time now I have been collecting the best of them and I intend to create a nice little collection. I hope to gradually write them down clearly and upload here.</p>
+                <p><b>Current status:</b> Under construction... </p>
+            </div>
+            <div id="puzzles_photo" class="w3-half w3-display-container">
+                    
+            </div>
+		</div>
+		
+        <hr>
+		<h4>Art Galleries</h4>
+		<div id="art_galleries" class="w3-container">
+            <div id="art_desc" class="w3-half">
+                <p><b>Description:</b> During my conference and holiday travels I often have the chance to visit local art galleries. For the last four years I have been recording the artworks that impressed me most, with an intention to create a catalogoue of my favourite paintings, sculptures and installations. </p>
+                <p><b>Current status:</b> Under construction...</p>
+
+            </div>
+            <div id="art_photo" class="w3-half w3-display-container">
+                    
+            </div>
+		</div>
+		
+	</div>
+
+    <script src="scripts/expand_collapse.js"></script>
+    <script>
+        function fix_size() {
+            document.getElementById("streetart_photo").style.height=document.getElementById("streetart_desc").offsetHeight+"px";
+            document.getElementById("puzzles_photo").style.height=document.getElementById("puzzles_desc").offsetHeight+"px";
+            document.getElementById("art_photo").style.height=document.getElementById("art_desc").offsetHeight+"px";
+        }
+    </script>
+</body>
+</html>

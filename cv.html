@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kamil Korzekwa - CV</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 600px) {#main {margin-top: 40px}}
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="pictures/about.jpg" style="width:100%;padding:2px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-graduation-cap w3-xxlarge"></i>
+            <p>MY RESEARCH</p>
+        </a>
+        <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-address-card w3-xxlarge"></i>
+            <p>SCIENTIFIC CV</p>
+        </a>
+        <a href="personal.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>PERSONAL</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="research.html" class="w3-bar-item w3-button" style="width:25% !important">MY RESEARCH</a>
+            <a href="cv.html" class="w3-bar-item w3-button" style="width:25% !important">SCIENTIFIC CV</a>
+            <a href="personal.html" class="w3-bar-item w3-button" style="width:25% !important">PERSONAL</a>
+        </div>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+        <h1>Kamil Korzekwa</h1>
+        <hr>
+        <div class="w3-row">
+            <div class="w3-third ">
+                <span>
+                    Quantum Science Research Group</br>
+                    School of Physics, University of Sydney</br>
+                    <a href="http://sydney.edu.au/science/people/kamil.korzekwa.php?apcode=ACADPROFILE300808" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://sydney.edu.au/etc/designs/corporate-commons/favicon.ico" style="width:1em;margin-right:.5em;" alt="USyd icon">Website</a></br>
+                    <span class="w3-tooltip copy-button" style="cursor:pointer"><a><i class="fa fa-envelope" style="width:1em;margin-right:.5em;" alt="Email icon"></i>Email</a><span class="w3-text">&nbsp(<em>click to copy email address to clipboard</em>)</span></span>
+                </span>
+            </div>
+            <div class="w3-third">
+                <span>
+                    <a href="https://orcid.org/0000-0002-0683-5469" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-0683-5469</a></br>
+                    <a href="https://scholar.google.co.uk/citations?user=8YXAXVkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://scholar.google.co.uk/favicon-png.ico" style="width:1em;margin-right:.5em;" alt="Google Scholar icon">Google Scholar</a></br>
+                    <a href="https://arxiv.org/find/all/1/all:+korzekwa/0/1/0/all/0/1" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://arxiv.org/favicon.ico" style="width:1em;margin-right:.5em;" alt="arXiv icon">arXiv</a></br>
+                    <a href="https://publons.com/author/1425073/kamil-korzekwa#profile" target="_blank" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://publons.com/static/images/favicons/favicon.ico" style="width:1em;margin-right:.5em;" alt="Publons icon">Publons</a>
+                </span>
+            </div>
+            <div class="w3-third">
+                <span>
+                    Citations: 458</br>
+                    h-index: 6</br>
+                    i10-index: 6
+                </span>
+            </div>
+        </div>
+        <hr>
+    
+        
+        
+        <h4 class="w3-button" onclick="expandCollapse(event,'employment')">&#8722 Employment</h4><br/>
+        <div id="employment" class="w3-container w3-hide w3-show">
+            <ul class="w3-ul">
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            Research Fellow in Quantum Information Theory, University of Sydney, Australia (2017-present) 
+                            <br>
+                        </span>
+                    </div>    
+                </li>
+            </ul>    
+        </div>
+        
+        <h4 class="w3-button" onclick="expandCollapse(event,'education')">&#8722 Education</h4><br/>
+        <div id="education" class="w3-container w3-hide w3-show">
+            <ul class="w3-ul">
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            PhD in Physics, Imperial College London, UK (2016) 
+                            <br>
+                        </span>
+                        <span>
+                            Supervisors: David Jennings, Terry Rudolph
+                            <br>
+                        </span>
+                        <span>
+                        PhD Thesis: <a href='https://spiral.imperial.ac.uk/bitstream/10044/1/43343/1/Korzekwa-K-2016-PhD-Thesis.pdf' target="_blank" class="journal_link">"Quantum coherence, thermodynamics and uncertainty relations"</a>
+                        </span>
+                    </div>    
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            MRes in Physics, Imperial College London, UK (2013) 
+                            <br>
+                        </span>
+                        <span>
+                            Supervisors: David Jennings, Terry Rudolph
+                            <br>
+                        </span>
+                        <span>
+                        MRes Thesis: <a href='theses/mres_thesis.pdf' target="_blank" class="journal_link">"Resource Theory of Asymmetry"</a>
+                        </span>
+                    </div>    
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            MSc in Nanoegineering, Wrocław University of Technology, Poland (2012) 
+                            <br>
+                        </span>
+                        <span>
+                            Supervisor: Paweł Machnikowski
+                            <br>
+                        </span>
+                        <span>
+                        MSc Thesis: <a href='theses/msci_thesis.pdf' target="_blank" class="journal_link">"Magnetooptical Kerr effect and resonant spin amplification"</a>
+                        </span>
+                    </div>    
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            BSc in Physics, Wrocław University of Technology, Poland (2010) 
+                            <br>
+                        </span>
+                        <span>
+                            Supervisor: Paweł Machnikowski
+                            <br>
+                        </span>
+                    </div>    
+                </li>
+            </ul>    
+        </div>
+        
+        <h4 class="w3-button" onclick="expandCollapse(event,'papers')">&#8722 Publications</h4><br/>
+        <div id="papers" class="w3-container w3-hide w3-show">
+            <ul class="w3-ul">
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            14. Beyond the thermodynamic limit: finite-size corrections to state interconversion rates
+                            <br>
+                        </span>
+                        <span>
+                            Christopher T. Chubb, Marco Tomamichel, Kamil Korzekwa
+                            <br>
+                        </span>
+                        <a href='https://arxiv.org/abs/1711.01193' target="_blank" class="journal_link">
+                            arXiv:1711.01193<br>
+                        </a>
+                    </div>    
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            13. Coherifying quantum channels
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, Stanisław Czachórski, Zbigniew Puchała, Karol Życzkowski
+                            <br>
+                        </span>
+                        <a href='http://iopscience.iop.org/article/10.1088/1367-2630/aaaff3/meta' target="_blank" class="journal_link">
+                            New J. Phys. <b>20</b>, 043028 (2018)
+                        </a>                       
+                        <a href="https://arxiv.org/abs/1710.04228" target="_blank" class="journal_link">
+                            [arXiv:1710.04228]
+                        </a>
+                        <br>
+                    </div>
+                </li>  
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            12. Markovian evolution of quantum coherence under symmetric dynamics
+                            <br>
+                        </span>
+                        <span>
+                            Matteo Lostaglio, Kamil Korzekwa, Antony Milne
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.96.032109' target="_blank" class="journal_link">
+                            Phys. Rev. A <b>96</b>, 032109 (2017)</a>                       
+                        <a href="https://arxiv.org/abs/1703.01826" target="_blank" class="journal_link">
+                            [arXiv:1703.01826]
+                        </a>
+                        <br>
+                    </div>
+                </li>    
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            11. Structure of the thermodynamic arrow of time in classical and quantum theories
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.052318' target="_blank" class="journal_link">
+                            Phys. Rev. A <b>95</b>, 052318 (2017)</a>                       
+                        <a href="https://arxiv.org/abs/1609.05910" target="_blank" class="journal_link">
+                            [arXiv:1609.05910]
+                        </a>
+                        <br>
+                    </div>    
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            10. Classical noise and the structure of minimal uncertainty states
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, Matteo Lostaglio
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.062347' target="_blank" class="journal_link">
+                            Phys. Rev. A <b>93</b>, 062347 (2016)</a>                       
+                        <a href="https://arxiv.org/abs/1602.01850" target="_blank" class="journal_link">
+                            [arXiv:1602.01850]
+                        </a>
+                        <br>
+                    </div>
+                </li>    
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            09. The extraction of work from quantum coherence
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, Matteo Lostaglio, Jonathan Oppenheim, David Jennings
+                            <br>
+                        </span>
+                        <a href='http://iopscience.iop.org/article/10.1088/1367-2630/18/2/023045/meta' target="_blank" class="journal_link">
+                            New J. Phys. <b>18</b>, 023045 (2016)</a>                       
+                        <a href="https://arxiv.org/abs/1506.07875" target="_blank" class="journal_link">
+                            [arXiv:1506.07875]
+                        </a>
+                        <br>
+                    </div>
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            08. Quantum Coherence, Time-Translation Symmetry, and Thermodynamics
+                            <br>
+                        </span>
+                        <span>
+                            Matteo Lostaglio, Kamil Korzekwa, David Jennings, Terry Rudolph
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/prx/abstract/10.1103/PhysRevX.5.021001' target="_blank" class="journal_link">
+                            Phys. Rev. X <b>5</b>, 021001 (2015)</a>                       
+                        <a href="https://arxiv.org/abs/1410.4572" target="_blank" class="journal_link">
+                            [arXiv:1410.4572]
+                        </a>
+                        <br>
+                    </div>
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            07. Quantum-state transfer in spin chains via isolated resonance of terminal spins
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, Paweł Machnikowski, Paweł Horodecki
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.062301' target="_blank" class="journal_link">
+                            Phys. Rev. A <b>89</b>, 062301 (2014)</a>                       
+                        <a href="https://arxiv.org/abs/1403.7359" target="_blank" class="journal_link">
+                            [arXiv:1403.7359]
+                        </a>
+                        <br>
+                    </div>
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            06. Operational constraints on state-dependent formulations of quantum error-disturbance trade-off relations
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, David Jennings, Terry Rudolph
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.052108' target="_blank" class="journal_link">
+                            Phys. Rev. A <b>89</b>, 052108 (2014)</a>                       
+                        <a href="https://arxiv.org/abs/1311.5506" target="_blank" class="journal_link">
+                            [arXiv:1311.5506 ]
+                        </a>
+                        <br>
+                    </div>    
+                </li>
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            05. Quantum and classical entropic uncertainty relations
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, Matteo Lostaglio, David Jennings, Terry Rudolph
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.042122' target="_blank" class="journal_link">
+                            Phys. Rev. A <b>89</b>, 042122 (2014)</a>                       
+                        <a href="https://arxiv.org/abs/1402.1143" target="_blank" class="journal_link">
+                            [arXiv:1402.1143 ]
+                        </a>
+                        <br>
+                    </div>
+                </li>    
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span class="mathjax" style="font-weight:bold">
+                            04. Spin dynamics in \(p\)-doped semiconductor nanostructures subject to a magnetic field tilted from the Voigt geometry
+                            <br>
+                        </span>
+                        <span>
+                            K. Korzekwa, C. Gradl, M. Kugler, S. Furthmeier, M. Griesbeck, M. Hirmer, D. Schuh, W. Wegscheider, T. Kuhn, C. Schüller, T. Korn, P. Machnikowski
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.155303' target="_blank" class="journal_link">
+                            Phys. Rev. B <b>88</b>, 155303 (2013)</a>                       
+                        <a href="https://arxiv.org/abs/1306.6363" target="_blank" class="journal_link">
+                            [arXiv:1306.6363]
+                        </a>
+                        <br>
+                    </div>
+                </li>    
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            03. Spin dynamics in two-dimensional electron and hole systems revealed by resonant spin amplification
+                            <br>
+                        </span>
+                        <span>
+                            T. Korn, M. Griesbeck, M. Kugler, S. Furthmeier, C. Gradl, M. Hirmer, D. Schuh, W. Wegscheider, K. Korzekwa, P. Machnikowski, T. Kuhn, M.M. Glazov, E.Ya. Sherman,C. Schüller
+                            <br>
+                        </span>
+                        <a href='http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1367496' target="_blank" class="journal_link">
+                            Proc. SPIE <b>8461</b>, Spintronics V, 84610O (2012)</a>  
+                        <a href="papers/spie12_rsa.pdf" target="_blank" class="journal_link">
+                            [Full Text]
+                        </a>
+                        <br>
+                    </div>
+                </li>    
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span style="font-weight:bold">
+                            02. Tunneling transfer protocol in a quantum dot chain immune to inhomogeneity
+                            <br>
+                        </span>
+                        <span>
+                            Kamil Korzekwa, Paweł Machnikowski
+                            <br>
+                        </span>
+                        <a href='http://przyrbwn.icm.edu.pl/APP/ABSTR/120/a120-5-9.html' target="_blank" class="journal_link">
+                            Acta Phys. Pol. A, <b>120</b>, 859-861 (2011)</a>                       
+                        <a href="https://arxiv.org/abs/1108.5749" target="_blank" class="journal_link">
+                            [arXiv:1108.5749 ]
+                        </a>
+                        <br>
+                    </div>
+                </li>  
+                <li class="w3-bar">
+                    <div class="w3-bar-item paper">
+                        <span class="mathjax" style="font-weight:bold">
+                            01. Decoherence-assisted initialization of a resident hole spin polarization in a \(p\)-doped semiconductor quantum well
+                            <br>
+                        </span>
+                        <span>
+                            M. Kugler, K. Korzekwa, P. Machnikowski, C. Gradl, S. Furthmeier, M. Griesbeck, M. Hirmer, D. Schuh, W. Wegscheider, T. Kuhn, C. Schüller, T. Korn
+                            <br>
+                        </span>
+                        <a href='https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.085327' target="_blank" class="journal_link">
+                            Phys. Rev. B <b>84</b>, 085327 (2011)</a>                       
+                        <a href="https://arxiv.org/abs/1105.1338" target="_blank" class="journal_link">
+                            [arXiv:1105.1338]
+                        </a>
+                        <br>
+                    </div>
+                </li>                    
+            </ul>
+        </div>
+
+        <h4 class="w3-button" onclick="expandCollapse(event,'talks')">+ Oral Presentations</h4></br>
+			<div id='talks' class="w3-container w3-hide">
+				<ul class="w3-ul">
+					<li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>08. Beyond the thermodynamic limit</b>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Thermo_04.pdf')">Slides</p>
+                                <p class="w3-button" onclick="window.open('talks/Thermo_04_variant.pdf')">Slides (variant)</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_4')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_4" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+									<li>Center for Theoretical Physics seminar, Polish Academy of Sciences, Poland (2017)</li>
+                                    <li>Quantum Information & Chaos seminar, Jagiellonian University, Poland (2017)</li>
+                                    <li>Quantum Foundations and Beyond symposium, National Quantum Information Centre, Sopot, Poland (2017)</li>      
+                                    <li>Quantum Science Group seminar, University of Sydney, Australia (2017)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>07. Coherifying quantum states and channels</b>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Coherence_02.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_2')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Centre for Quantum Software and Information seminar, University of Technology Sydney, Sydney, Australia (2018)</li>
+									<li>Monash Quantum Information Science seminar, Monash University, Melbourne Australia (2018)</li>
+									<li>QSciTech Research Group seminar, Macquarie University, Sydney, Australia (2018)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>                    
+					<li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>06. On time evolution of coherences and populations</b>
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Coherence_01.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_1')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Quantum Information & Chaos seminar, Jagiellonian University, Kraków, Poland (2016)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>  
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>05. The extraction of work from quantum coherence</b>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/thermo_03.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_3')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_3" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Scientific meeting of PhD students, Wrocław University of Technology, Poland (2016)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>04. Quantum information and thermodynamics: a resource-theoretic approach</b>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Thermo_02.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_2')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Quantum Optics and Laser Science Group seminar, Imperial College London, United Kingdom (2016)</li>
+                                    <li>Takahiro Sagawa's Group seminar, University of Tokyo, Japan (2016)</li>
+                                    <li>Quantum Science Group seminar, University of Sydney, Australia (2016)</li>
+                                    <li>Coherence-Correlations-Complexity seminar, Wrocław University of Technology, Poland (2015)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>03. Quantum Coherence, Time-Translation Symmetry, and Thermodynamics</b>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Thermo_01.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_1')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>APS March Meeting, Baltimore, USA (2016)</li>
+                                    <li>4th International Workshop on the Optical Properties of Nanostructures, Wrocław, Poland (2016)</li>
+                                    <li>Quantum Information Theory seminar, ICFO Barcelona, Spain (2016)</li>
+                                    <li>Symposium on Quantum Coherence, University of Ulm, Germany (2015)</li>
+                                    <li>Quantum Information Theory seminar, ETH Zurich, Switzerland (2015)</li> 
+                                    <li>7th Colleges of London Quantum Information Meeting, Imperial College London, United Kingdom (2014)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>                    
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>02. Quantum state transfer via spin chains</b>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Other_02.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_2')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Coherence-Correlations-Complexity seminar, Wrocław University of Technology, Poland (2013)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <b>01. Decoherence-driven mechanism for initialization of hole spins in a p-doped semiconductor quantum well</b>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Other_01.pdf')">Slides</p>
+                                <p class="w3-button" onclick="window.open('talks/Other_01_short.pdf')">Slides (shortened)</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_1')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>41st “Jaszowiec” International School & Conference on the Physics of Semiconductors, Krynica-Zdrój, Poland (2012)</li>
+                                    <li>Optical Spectroscopy of Semiconductor Quantum Structures seminar, Universität Regensburg, Germany (2011)</li>
+                                    <li>Coherence-Correlations-Complexity seminar, Wrocław University of Technology, Poland (2011)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+				</ul>
+			</div>
+			
+		<h4 class="w3-button" onclick="expandCollapse(event,'poster')">+ Poster Presentations</h4></br>
+			<div id='poster' class="w3-container w3-hide">
+				<ul class="w3-ul">
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+								10. Coherifying quantum channels
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Coherence_02.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_poster_2')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_poster_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>13th Conference on the Theory of Quantum Computation, Communication and Cryptography​, Sydney, Australia (2018)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item oral">
+                            <span style="font-weight:bold">
+                                09. Markovian evolution of quantum coherence under symmetric dynamics
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Coherence_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'coherence_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="coherence_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>21st Conference on Quantum Information Processing, Delft, Netherlands (2018)</li>
+									<li>EQuS Annual Workshop, Hunter Valley, Australia (2017)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                08. Work extraction from quantum coherence
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Thermo_02.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_poster_2')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_poster_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>3rd Quantum Thermodynamics Conference, Porquerolles, France (2015)</li>
+									<li>Postgraduate Research Symposium at Imperial College London, London, United Kingdom (2015)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                07. Quantum Coherence, Time-Translation Symmetry, and Thermodynamics
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Thermo_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'thermo_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="thermo_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>18th Conference on Quantum Information Processing, Sydney, Australia (2015)</li>
+                                    <li>2nd Quantum Thermodynamics Conference, Mallorca, Spain (2015)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+					<li class="w3-bar">
+                        <div class="w3-bar-item oral">
+                            <span style="font-weight:bold">
+                                06. Noise and disturbance of quantum measurement: measures and uncertainty relations
+                                <br>
+                            </span>
+                                
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Uncertainty_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'uncertainty_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="uncertainty_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Summer School on Quantum Information, Computing and Control, London, United Kingdom (2013)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                05. Spin dynamics in p-doped semiconductor nanostructures subject to magnetic fields tilted from the Voigt geometry
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_05.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_5')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_5" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>16th International Conference on Modulated Semiconductor Structures, Wrocław, Poland (2013)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                04. On-demand quantum state transfer in spin chains with limited control and high resilience against imperfections
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_04.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_4')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_4" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Summer School on Quantum Information, Computing and Control, Aberystwyth, United Kingdom (2012)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 					
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                03. Theoretical modelling of magnetooptical experiments in p-doped nanostructures
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_03.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_3')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_3" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>Polish-German Workshop on the Optical Properties of Nanostructures, Münster (2012)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                02. Theory of Kerr rotation and resonant spin amplification in p-doped nanostructures
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_02.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_2')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_2" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>The international conference on Optics of Excitons in Confined Systems, Paris (2011)</li>
+									<li>Polish-German Workshop on the Optical Properties of Nanostructures, Wrocław (2011)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+					<li class="w3-bar">
+                        <div class="w3-bar-item poster">
+                            <span style="font-weight:bold">
+                                01. Tunneling Transfer Protocol in a Quantum Dots Chain Immune to Inhomogeneity
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('posters/Other_01.pdf')">Poster</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_poster_1')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_poster_1" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>40th “Jaszowiec” Conference on the Physics of Semiconductors, Krynica Zdrój (2011)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+				</ul>
+			</div>	
+	
+		<h4 class="w3-button" onclick="expandCollapse(event,'teaching')">+ Teaching and Supervision</h4></br>
+			<div id="teaching" class="w3-container w3-hide">
+				<ul class="w3-ul">
+					<li class="w3-bar">
+						<div class="w3-bar-item paper">
+							<span style="font-weight:bold">
+								Teaching assistant, University of Sydney (2017) 
+								<br>
+							</span>
+							<span>
+								Series of lectures on: "Quantum Spookiness" (2nd year undergraduate course) 
+								<br>
+							</span>
+						</div>    
+					</li>
+					<li class="w3-bar">
+						<div class="w3-bar-item paper">
+							<span style="font-weight:bold">
+								Co-supervision of Honours project, University of Sydney (2017) 
+								<br>
+							</span>
+							<span>
+								Student: Taiga Adair
+								<br>
+							</span>
+							<span>
+								Honours thesis: "Measurement-Based Quantum Computation with a Foliated Colour Code"
+							</span>
+						</div>    
+					</li>
+					<li class="w3-bar">
+						<div class="w3-bar-item paper">
+							<span style="font-weight:bold">
+								Supervision of Senior's project, University of Sydney (2017) 
+								<br>
+							</span>
+							<span>
+								Student: Matthew Winnel
+								<br>
+							</span>
+							<span>
+								Senior's project: "Exploring the thermodynamic arrow of time for low-dimensional quantum systems"
+							</span>
+						</div>    
+					</li>
+					<li class="w3-bar">
+						<div class="w3-bar-item paper">
+							<span style="font-weight:bold">
+								Co-supervision of Master's student, Imperial College London (2015)
+								<br>
+							</span>
+							<span>
+								Student: Sofia Qvarfort
+								<br>
+							</span>
+							<span>
+								MSc Thesis: "A Resource-Theoretical Approach to Time-Energy Measurements in Quantum Mechanics"
+							</span>
+						</div>    
+					</li>
+					<li class="w3-bar">
+						<div class="w3-bar-item paper">
+							<span style="font-weight:bold">
+								Teaching assistant, Imperial College London (2014) 
+								<br>
+							</span>
+							<span>
+								Tutorials on: "Mathematics: Functions" (1st year undergraduate course) 
+								<br>
+							</span>
+						</div>    
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+    <script src="scripts/clipboard.js-master/dist/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.copy-button', {
+            text: function() {
+                return 'kamil'+'.'+'korzekwa'+'@'+'sydney'+'.'+'edu'+'.'+'au';
+           }
+        });
+    </script>        
+    <script src="scripts/expand_collapse.js"></script>
+
+</body>
+</html>
