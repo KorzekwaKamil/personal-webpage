@@ -122,9 +122,12 @@
     <script src="scripts/expand_collapse.js"></script>
     <script>
         function fix_size() {
-            document.getElementById("streetart_photo").style.height=document.getElementById("streetart_desc").offsetHeight+"px";
-            document.getElementById("puzzles_photo").style.height=document.getElementById("puzzles_desc").offsetHeight+"px";
-            document.getElementById("art_photo").style.height=document.getElementById("art_desc").offsetHeight+"px";
+            if (window.innerWidth > 600) {
+                document.getElementById("streetart_photo").style.height=document.getElementById("streetart_desc").offsetHeight+"px";
+            }
+            else {
+                document.getElementById("streetart_photo").style.height=document.getElementById("streetart_desc").offsetWidth+"px";
+            }
         }
     </script>
 </body>
