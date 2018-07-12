@@ -1,13 +1,19 @@
 #main {
-    margin-left: 140px
+    margin-left:140px;
+	margin-right:140px;
+}
+
+#rightbar { 
+    width:140px;
+    height:100%;
+    position:fixed;
+    right:0px;
+    background:black
 }
 
 @media only screen and (max-width: 600px) {
-    #main {margin-left: 0}
-}
-
-@media only screen and (max-width: 600px) {
-    #main {margin-top: 40px}
+    #main {margin-left:0px;margin-right:0px;margin-top:40px}
+    #rightbar {width:0}
 }
 
 .w3-sidebar {
@@ -23,14 +29,14 @@ a:hover {
     background-color:lightgray;
 }
 
+.intext_link {
+    color:#A0103D;
+}
+
 .journal_link {
     text-decoration:none;
 }
 
 .journal_link:hover {
     background-color:lightgray;
-}
-
-.indented {
-	text-indent: 25px;
 }
