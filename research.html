@@ -7,9 +7,6 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @media only screen and (max-width: 600px) {#main {margin-top: 40px}}
-    </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 
@@ -47,6 +44,9 @@
         </div>
     </div>
     
+	<!-- Right black bar -->
+	<div id="rightbar"></div>
+	
     <!-- Page Content -->
     <div class="w3-padding-large w3-container" id="main">     
           
@@ -63,9 +63,9 @@
         </div>
 		<hr>
 		<h4>Areas of research</h4>
-			<p>
-                (To see a full list of publications and presentations in a chronological order check my <a href="cv.html">Scientific CV</a>)
-			</p>
+		<div class="w3-container">
+            <p>(To see a full list of publications and presentations in a chronological order check my <a class="intext_link" href="cv.html">Scientific CV</a>)</p>
+        </div>
         <div class="w3-row-padding w3-center">
             <a href="javascript:void(0)" onclick="openField(event, 'Thermodynamics',' w3-border-red');">
                 <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-red"><h5>Quantum Thermodynamics</h5></div>
@@ -81,16 +81,31 @@
             </a>
         </div>
 
-        <div id="Thermodynamics" class="w3-container field">     
+        <div id="Thermodynamics" class="field">     
             <br/>
             <div id="thermo_background" class="w3-container">
                 <p>When speaking of thermodynamics one inevitably thinks of concepts such as heat flows, thermal machines and pressure, which seem to be far removed from the ideas of quantum information theory. However, on a more abstract level, thermodynamics can be seen as a field studying the accessibility/inaccessibility of one physical state from another. The first and second laws of thermodynamics are fundamental constraints on state transformations, forcing thermodynamic processes to conserve the overall energy and forbidding free conversion of heat into work. Hence, the resource-theoretic machinery originally developed to study entanglement is also perfectly suited to shed light on thermodynamics. </p> 
                 <p>In my research I mostly focus on the role that superposition principle plays in thermodynamic considerations. More precisely, I am interested in thermodynamic limitations on processing quantum coherence, the way it affects the thermodynamic arrow of time and the possibility of exploiting coherence to enhance the performance of heat engines. These foundational questions may be of interest for future advancements in nanotechnology, as interference effects are particularly relevant at scales we are increasingly able to control. Recently I am also interested in the problem of thermodynamic (and general resource-theoretic) transformations of finite-size systems, and in particular the effect this non-asymptotic regime has on reversible transformations.</p>
             </div>
             
-            <h6 class="w3-button" onclick="expandCollapse(event,'thermo_papers')">+ Publications</h6><br/>
-            <div id="thermo_papers" class="w3-container w3-hide">
+            <h6 class="w3-button" onclick="expandCollapse(event,'thermo_papers')">&#8722 Publications</h6><br/>
+            <div id="thermo_papers" class="w3-container w3-hide w3-show">
                 <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Avoiding irreversibility: resonant conversion of quantum resources</i>
+                                <br>
+                            </span>
+                            <span>
+                                Christopher T. Chubb, Marco Tomamichel, Kamil Korzekwa
+                                <br>
+                            </span>
+                            <span>
+                                <i>In preparation</i></br>
+                            </span><div class="w3-container"></br></div>
+                        </div>
+                    </li>
                     <li class="w3-bar">
                         <div class="w3-bar-item paper">
                             <span>
@@ -332,7 +347,7 @@
             </div>
         </div>
 
-        <div id="Coherence" class="w3-container field" style="display:none">
+        <div id="Coherence" class="field" style="display:none">
             
             <br/>
             <div id="coherence_background" class="w3-container">
@@ -340,9 +355,24 @@
                 <p>Beyond the role that quantum coherence plays in thermodynamics, I am also interested in characterizing it as a resource in general quantum information scenarios. This involves studies on optimal processing of coherence (i.e., finding the ultimate limits of avoiding decoherence processes that deteriorate quantum information), understanding how it affects the nature of reversible processes and investigating the role quantum coherence plays in distinguishing physical states and processes.</p>
             </div>
             
-            <h6 class="w3-button" onclick="expandCollapse(event,'coherence_papers')">+ Publications</h6><br/>
-            <div id="coherence_papers" class="w3-container w3-hide">
+            <h6 class="w3-button" onclick="expandCollapse(event,'coherence_papers')">&#8722 Publications</h6><br/>
+            <div id="coherence_papers" class="w3-container w3-hide w3-show">
                 <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>Distinguishing classically indistinguishable states and channels</i>
+                                <br>
+                            </span>
+                            <span>
+                                Kamil Korzekwa, Stanisław Czachórski, Zbigniew Puchała, Karol Życzkowski
+                                <br>
+                            </span>
+                            <span>
+                                <i>In preparation</i></br>
+                            </span><div class="w3-container"></br></div>
+                        </div>
+                    </li>
                     <li class="w3-bar">
                         <div class="w3-bar-item paper">
                             <span>
@@ -484,7 +514,7 @@
             </div>
         </div>
 
-        <div id="Uncertainty" class="w3-container field" style="display:none">
+        <div id="Uncertainty" class="field" style="display:none">
             
 			<br/>
             <div id="uncertainty_background" class="w3-container">	
@@ -493,8 +523,8 @@
                 In my research I focus on the interplay between quantum and classical uncertainty. The motivation comes from the fact the original uncertainty relations, developed when physicists were mostly interested in extreme scenarios and ultimate bounds, were restricted to quantum systems prepared in pure states of maximal knowledge. However, as soon as uncertainty relations are used to study quantum information problems, the investigated systems are not necessarily prepared in pure states. In fact, most quantum states arising in theoretical considerations (e.g., in entanglement theory) and the ones used to describe quantum systems prepared in laboratories are mixed. Therefore, a proper understanding of the interplay between classical lack of knowledge and purely quantum uncertainty coming from coherence is crucial for quantum information based technologies.</p>
             </div>
             
-            <h6 class="w3-button" onclick="expandCollapse(event,'uncertainty_papers')">+ Publications</h6></br>
-            <div id="uncertainty_papers" class="w3-container w3-hide">
+            <h6 class="w3-button" onclick="expandCollapse(event,'uncertainty_papers')">&#8722 Publications</h6></br>
+            <div id="uncertainty_papers" class="w3-container w3-hide w3-show">
                 <ul class="w3-ul">
                     <li class="w3-bar">
                         <div class="w3-bar-item paper">
@@ -597,13 +627,13 @@
             </div>
         </div>
           
-        <div id="Other" class="w3-container field" style="display:none">
+        <div id="Other" class="field" style="display:none">
             <br/>
             <div id="other_background" class="w3-container">	
-				At the earliest stage of my career I was working in <a href="http://nanotheory.pwr.edu.pl/" target="_blank">"Theory of excitation dynamics in semiconductors"</a> research group, where I was developing models for spin dynamics in p-doped semiconductor nanostructures subject to a magnetic field. Apart from the general interest in understanding the often non-trivial kinetics of spin precession and decoherence, the optical studies of such structures are motivated by possible applications in spintronics and spin-based quantum information processing. At some point I also got interested in the problem of quantum state transfer in spin chains, which were proposed as potential candidates for short-range communication channels providing inter-qubit communication during more complex quantum computation processes.
+				<p>At the earliest stage of my career I was working in <a href="http://nanotheory.pwr.edu.pl/" target="_blank">"Theory of excitation dynamics in semiconductors"</a> research group, where I was developing models for spin dynamics in p-doped semiconductor nanostructures subject to a magnetic field. Apart from the general interest in understanding the often non-trivial kinetics of spin precession and decoherence, the optical studies of such structures are motivated by possible applications in spintronics and spin-based quantum information processing. At some point I also got interested in the problem of quantum state transfer in spin chains, which were proposed as potential candidates for short-range communication channels providing inter-qubit communication during more complex quantum computation processes.</p>
             </div>
-            <h6 class="w3-button" onclick="expandCollapse(event,'other_papers')">+ Publications</h6></br>
-            <div id="other_papers" class="w3-container w3-hide">
+            <h6 class="w3-button" onclick="expandCollapse(event,'other_papers')">&#8722 Publications</h6></br>
+            <div id="other_papers" class="w3-container w3-hide w3-show">
                 <ul class="w3-ul">
                     <li class="w3-bar">
                         <div class="w3-bar-item paper">
