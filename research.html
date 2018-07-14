@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106186455-2"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+		gtag('config', 'UA-106186455-2');
+	</script>
+	
 	<title>Kamil Korzekwa - Research</title>
+	
+	<meta name="description" content="Personal webpage of Kamil Korzekwa.">
+	<meta name="keywords" content="Kamil Korzekwa, Kamil, Korzekwa, physics, quantum, quantum physics, quantum information, research">
+	<meta name="author" content="Kamil Korzekwa">
+	<meta name="language" content="English">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
+	
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-	<link rel="icon" type="image/x-icon" sizes="16x16" href="pictures/kk_favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="pictures/kk_favicon.ico">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 
-<body>
+<body onload="fix_size()" onresize="fix_size()">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -23,11 +38,11 @@
         </a>
         <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-black">
             <i class="fa fa-graduation-cap w3-xxlarge"></i>
-            <p>MY RESEARCH</p>
+            <p>RESEARCH</p>
         </a>
         <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-black">
             <i class="fa fa-address-card w3-xxlarge"></i>
-            <p>SCIENTIFIC CV</p>
+            <p>CV</p>
         </a>
         <a href="personal.html" class="w3-bar-item w3-button w3-padding-large w3-black">
             <i class="fa fa-user w3-xxlarge"></i>
@@ -39,8 +54,8 @@
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="research.html" class="w3-bar-item w3-button" style="width:25% !important">MY RESEARCH</a>
-            <a href="cv.html" class="w3-bar-item w3-button" style="width:25% !important">SCIENTIFIC CV</a>
+            <a href="research.html" class="w3-bar-item w3-button" style="width:25% !important">RESEARCH</a>
+            <a href="cv.html" class="w3-bar-item w3-button" style="width:25% !important">CV</a>
             <a href="personal.html" class="w3-bar-item w3-button" style="width:25% !important">PERSONAL</a>
         </div>
     </div>
@@ -67,21 +82,13 @@
 		<div class="w3-container">
             <p>(To see a full list of publications and presentations in a chronological order check my <a class="intext_link" href="cv.html">Scientific CV</a>)</p>
         </div>
-        <div class="w3-row-padding w3-center">
-            <a href="javascript:void(0)" onclick="openField(event, 'Thermodynamics',' w3-border-red');">
-                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-red"><h5>Quantum Thermodynamics</h5></div>
-            </a>
-            <a href="javascript:void(0)" onclick="openField(event, 'Coherence',' w3-border-blue');">
-                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding"><h5>Quantum Coherence</h5></div>
-            </a>
-            <a href="javascript:void(0)" onclick="openField(event, 'Uncertainty',' w3-border-green');">
-                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding"><h5>Uncertainty Relations</h5></div>
-            </a>
-            <a href="javascript:void(0)" onclick="openField(event, 'Other',' w3-border-black');">
-                <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding"><h5>Other Quantum</h5></div>
-            </a>
+        <div class="w3-row-padding w3-center" style="width:100%">
+			<div id="tablink1" class="w3-col l3 m6 s12 tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-red" onclick="openField(event, 'Thermodynamics',' w3-border-red');"><h5>Quantum Thermodynamics</h5></div>
+			<div id="tablink2" class="w3-col l3 m6 s12 tablink w3-bottombar w3-hover-light-grey w3-padding" onclick="openField(event, 'Coherence',' w3-border-blue');"><h5>Quantum Coherence</h5></div>
+			<div id="tablink3" class="w3-col l3 m6 s12 tablink w3-bottombar w3-hover-light-grey w3-padding" onclick="openField(event, 'Uncertainty',' w3-border-green');"><h5>Uncertainty Relations</h5></div>
+			<div id="tablink4" class="w3-col l3 m6 s12 tablink w3-bottombar w3-hover-light-grey w3-padding" onclick="openField(event, 'Other',' w3-border-black');"><h5>Other Quantum</h5></div>
         </div>
-
+		
         <div id="Thermodynamics" class="field">     
             <br/>
             <div id="thermo_background" class="w3-container">
@@ -903,6 +910,15 @@
     
     <script src="scripts/open_field.js"></script>
     <script src="scripts/expand_collapse.js"></script>
-    
+    <script>
+        function fix_size() {
+            if (window.innerWidth > 600) {
+                document.getElementById("tablink2").style.height=document.getElementById("tablink1").offsetHeight+"px";
+                document.getElementById("tablink3").style.height=document.getElementById("tablink1").offsetHeight+"px";
+                document.getElementById("tablink4").style.height=document.getElementById("tablink1").offsetHeight+"px";
+            }
+         
+        }
+    </script>
  </body>
 </html>
