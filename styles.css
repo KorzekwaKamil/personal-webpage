@@ -40,3 +40,7 @@ a:hover {
 .journal_link:hover {
     background-color:lightgray;
 }
+
+.tablink {
+	cursor:pointer;
+}
