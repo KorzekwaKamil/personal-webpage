@@ -864,6 +864,29 @@
                     <li class="w3-bar">
                         <div class="w3-bar-item paper">
                             <span>
+                                <i>Fast estimation of outcome probabilities for quantum circuits</i>
+                                <br>
+                            </span>
+                            <span>
+                                Hakop Pashayan, Oliver Reardon-Smith, Kamil Korzekwa, Stephen D. Bartlett
+                                <br>
+                            </span>
+                            <a href='https://arxiv.org/abs/2101.12223' target="_blank" class="journal_link">
+                                arXiv:2101.12223 (2021)
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/2101.11288')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_8')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_8" class="w3-container w3-hide abstract mathjax">
+                                <p><i>Abstract: </i> We present two classical algorithms for the simulation of universal quantum circuits on \(n\) qubits constructed from \(c\) instances of Clifford gates and \(t\) arbitrary-angle \(Z\)-rotation gates such as \(T\) gates. Our algorithms complement each other by performing best in different parameter regimes. The \(\tt{Estimate}\) algorithm produces an additive precision estimate of the Born rule probability of a chosen measurement outcome with the only source of run-time inefficiency being a linear dependence on the stabilizer extent (which scales like \(\approx 1.17t\) for \(T\) gates). Our algorithm is state-of-the-art for this task: as an example, in approximately 25 hours (on a standard desktop computer), we estimated the Born rule probability to within an additive error of 0.03, for a 50 qubit, 60 non-Clifford gate quantum circuit with more than 2000 Clifford gates. The \(\tt{Compute}\) algorithm calculates the probability of a chosen measurement outcome to machine precision with run-time \(O(2t−r(t−r)t)\) where \(r\) is an efficiently computable, circuit-specific quantity. With high probability, \(r\) is very close to \(\min\{t,n−w\}\) for random circuits with many Clifford gates, where \(w\) is the number of measured qubits. \(\tt{Compute}\) can be effective in surprisingly challenging parameter regimes, e.g., we can randomly sample Clifford+\(T\) circuits with \(n=55\), \(w=5\), \(c=105\) and \(t=80\) \(T\) gates, and then compute the Born rule probability with a run-time consistently less than 104 seconds using a single core of a standard desktop computer. We provide a C+Python implementation of our algorithms.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
                                 <i>Algebraic and geometric structures inside the Birkhoff polytope</i>
                                 <br>
                             </span>
