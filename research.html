@@ -1152,11 +1152,57 @@
                     <li class="w3-bar">
                         <div class="w3-bar-item paper">
                             <span>
+                                <i>Simulating non-trivial incompressible flows with a quantum lattice Boltzmann algorithm</i>
+                                <br>
+                            </span>
+                            <span>
+                                David Jennings, Kamil Korzekwa, Matteo Lostaglio, Paul Mannix, Richard Ashworth, Emanuele Marsili, Stephen Rolston
+                                <br>
+                            </span>
+                            <a href='https://arxiv.org/abs/2512.05781' target="_blank" class="journal_link">
+                                arXiv:2512.05781 (2025)
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/2512.05781')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_15')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_15" class="w3-container w3-hide abstract mathjax">
+                                <p align="justify"><i>Abstract: </i> Quantum algorithms have been identified as a potential means to accelerate computational fluid dynamics (CFD) simulations, with the lattice Boltzmann method (LBM) being a promising candidate for realizing quantum speedups. Here, we extend the recent quantum algorithm for the incompressible LBM to account for realistic fluid dynamics setups by incorporating walls, inlets, outlets, and external forcing. We analyze the associated complexity cost and show that these modifications preserve the asymptotic scaling, and potential quantum advantage, of the original algorithm. Moreover, to support our theoretical analysis, we provide a classical numerical study illustrating the accuracy, complexity, and convergence of the algorithm for representative incompressible-flow cases, including the driven Taylor–Green vortex, the lid-driven cavity flow, and the flow past a cylinder. Our results provide a pathway to accurate quantum simulation of nonlinear fluid dynamics, and a framework for extending quantum LBM to more challenging flow configurations.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
+                                <i>An end-to-end quantum algorithm for nonlinear fluid dynamics with bounded quantum advantage</i>
+                                <br>
+                            </span>
+                            <span>
+                                David Jennings, Kamil Korzekwa, Matteo Lostaglio, Richard Ashworth, Emanuele Marsili, Stephen Rolston
+                                <br>
+                            </span>
+                            <a href='https://arxiv.org/abs/2512.03758' target="_blank" class="journal_link">
+                                arXiv:2512.03758 (2025)
+                            </a>
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/2512.03758')">PDF</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_abstract_14')">+ Abstract</p>
+                            </div>
+                            <div id="other_abstract_14" class="w3-container w3-hide abstract mathjax">
+                                <p align="justify"><i>Abstract: </i> Computational fluid dynamics (CFD) is a cornerstone of classical scientific computing, and there is growing interest in whether quantum computers can accelerate such simulations. To date, the existing proposals for fault-tolerant quantum algorithms for CFD have almost exclusively been based on the Carleman embedding method, used to encode nonlinearities on a quantum computer. In this work, we begin by showing that these proposals suffer from a range of severe bottlenecks that negate conjectured quantum advantages: lack of convergence of the Carleman method, prohibitive time-stepping requirements, unfavorable condition number scaling, and inefficient data extraction. With these roadblocks clearly identified, we develop a novel algorithm for the incompressible lattice Boltzmann equation that circumvents these obstacles, and then provide a detailed analysis of our algorithm, including all potential sources of algorithmic complexity, as well as gate count estimates. We find that for an end-to-end problem, a modest quantum advantage may be preserved for selected observables in the high-error-tolerance regime. We lower bound the Reynolds number scaling of our quantum algorithm in dimension \(D\) at Kolmogorov microscale resolution with \(O(\mathrm{Re}^{\frac{3}{4}(1+\frac{D}{2})} \times q_M)\), where \(q_M\) is a multiplicative overhead for data extraction with \(q_M = O(\mathrm{Re}^{\frac{3}{8}})\) for the drag force. This upper bounds the scaling improvement over classical algorithms by \(O(\mathrm{Re}^{\frac{3D}{8}})\). However, our numerical investigations suggest a lower speedup, with a scaling estimate of \(O(\mathrm{Re}^{1.936} \times q_M)\) for \(D=2\). Our results give robust evidence that small, but nontrivial, quantum advantages can be achieved in the context of CFD, and motivate the need for additional rigorous end-to-end quantum algorithm development.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w3-bar">
+                        <div class="w3-bar-item paper">
+                            <span>
                                 <i>Quantum algorithms for general nonlinear dynamics based on the Carleman embedding</i>
                                 <br>
                             </span>
                             <span>
-                                David Jennings, Kamil Korzekwa, Matteo Lostaglio, Andrew T Sornborger, Yigit Subasi, Guoming Wang
+                                David Jennings, Kamil Korzekwa, Matteo Lostaglio, Andrew T. Sornborger, Yigit Subasi, Guoming Wang
                                 <br>
                             </span>
                             <a href='https://arxiv.org/abs/2509.07155' target="_blank" class="journal_link">
