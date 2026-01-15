@@ -1159,8 +1159,8 @@
                                 David Jennings, Kamil Korzekwa, Matteo Lostaglio, Paul Mannix, Richard Ashworth, Emanuele Marsili, Stephen Rolston
                                 <br>
                             </span>
-                            <a href='https://arxiv.org/abs/2512.05781' target="_blank" class="journal_link">
-                                arXiv:2512.05781 (2025)
+                            <a href='https://arc.aiaa.org/doi/10.2514/6.2026-1936' target="_blank" class="journal_link">
+                                AIAA 2026-1936. AIAA SciTech 2026 Forum (2026)
                             </a>
                             <div class="w3-bar">
                                 <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/2512.05781')">PDF</p>
@@ -1188,9 +1188,14 @@
                             <div class="w3-bar">
                                 <p class="w3-button" onclick="window.open('https://arxiv.org/pdf/2512.03758')">PDF</p>
                                 <p class="w3-button" onclick="expandCollapse(event,'other_abstract_14')">+ Abstract</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_popsum_14')">+ Popular Summary</p>
                             </div>
                             <div id="other_abstract_14" class="w3-container w3-hide abstract mathjax">
                                 <p align="justify"><i>Abstract: </i> Computational fluid dynamics (CFD) is a cornerstone of classical scientific computing, and there is growing interest in whether quantum computers can accelerate such simulations. To date, the existing proposals for fault-tolerant quantum algorithms for CFD have almost exclusively been based on the Carleman embedding method, used to encode nonlinearities on a quantum computer. In this work, we begin by showing that these proposals suffer from a range of severe bottlenecks that negate conjectured quantum advantages: lack of convergence of the Carleman method, prohibitive time-stepping requirements, unfavorable condition number scaling, and inefficient data extraction. With these roadblocks clearly identified, we develop a novel algorithm for the incompressible lattice Boltzmann equation that circumvents these obstacles, and then provide a detailed analysis of our algorithm, including all potential sources of algorithmic complexity, as well as gate count estimates. We find that for an end-to-end problem, a modest quantum advantage may be preserved for selected observables in the high-error-tolerance regime. We lower bound the Reynolds number scaling of our quantum algorithm in dimension \(D\) at Kolmogorov microscale resolution with \(O(\mathrm{Re}^{\frac{3}{4}(1+\frac{D}{2})} \times q_M)\), where \(q_M\) is a multiplicative overhead for data extraction with \(q_M = O(\mathrm{Re}^{\frac{3}{8}})\) for the drag force. This upper bounds the scaling improvement over classical algorithms by \(O(\mathrm{Re}^{\frac{3D}{8}})\). However, our numerical investigations suggest a lower speedup, with a scaling estimate of \(O(\mathrm{Re}^{1.936} \times q_M)\) for \(D=2\). Our results give robust evidence that small, but nontrivial, quantum advantages can be achieved in the context of CFD, and motivate the need for additional rigorous end-to-end quantum algorithm development.
+                                </p>
+                            </div>
+                            <div id="other_popsum_14" class="w3-container w3-hide popsum mathjax">
+                                <p align="justify"><i>Popular summary:</i> Accurate simulation of fluid flows is critical across science and engineering, from predicting aerodynamic performance to understanding turbulent transport. However, high-fidelity computational fluid dynamics (CFD) remains one of the most resource-intensive tasks in classical computing. This has motivated interest in whether quantum computers could offer computational advantages in this field and bring a transformative change. Several recent approaches rely on Carleman linearization, a method that embeds nonlinear fluid equations into much higher-dimensional linear systems amenable by quantum computers. Despite the appeal of this approach, significant challenges remain unresolved, including convergence of the linearization procedure, runtime scaling for outputting the solution, and difficulties in extracting physically meaningful quantities from the quantum output. In this work, we introduce a new quantum algorithm for the lattice Boltzmann equation (LBE) that is designed explicitly to overcome these issues. By employing a shifted incompressible formulation of LBE together with a discrete Carleman embedding, we develop a representation of the dynamics that is compatible with fault-tolerant quantum computation while mitigating prior bottlenecks. We perform a comprehensive analysis of every component of the algorithm, down to the elementary-gate level, and quantify all sources of computational cost. This is complemented by extensive numerical studies assessing the validity and limitations of the underlying Carleman strategy. Our findings indicate that a modest but nontrivial quantum advantage is achievable for selected observables in specific parameter regimes. More broadly, this work provides a realistic and rigorous foundation for the emerging field of quantum-enabled CFD, clarifying both its potential and its fundamental limitations.
                                 </p>
                             </div>
                         </div>
@@ -1512,6 +1517,24 @@
             <h6 class="w3-button" onclick="expandCollapse(event,'other_talks')">+ Oral Presentations</h6></br>
             <div id="other_talks" class="w3-container w3-hide">
                 <ul class="w3-ul">
+                    <li class="w3-bar">
+                        <div class="w3-bar-item talk">
+                            <span>
+                                <i>Simulating non-trivial incompressible flows with a quantum lattice Boltzmann algorithm</i>
+                                <br>
+                            </span>
+                            
+                            <div class="w3-bar">
+                                <p class="w3-button" onclick="window.open('talks/Other_07.pdf')">Slides</p>
+                                <p class="w3-button" onclick="expandCollapse(event,'other_presented_7')">+ Presented at</p>
+                            </div>
+                            <div id="other_presented_7" class="w3-container w3-hide">
+                                <ul class="w3-ul">
+                                    <li>AIAA SciTech Forum 2026, Orlando, USA (2026)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> 
                     <li class="w3-bar">
                         <div class="w3-bar-item talk">
                             <span>
