@@ -9,7 +9,7 @@ function openField(event, field,tab_color) {
                 tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
                 tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
                 tablinks[i].className = tablinks[i].className.replace(" w3-border-green", "");
-                tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-orange", "");
             }
             document.getElementById(field).style.display = "block";
             event.currentTarget.className += tab_color;
